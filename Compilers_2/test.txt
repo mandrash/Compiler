@@ -1,0 +1,27 @@
+main() {
+    integer x;
+    string z;
+    z = "www";
+    z = "gg";
+    bool y;
+    y = true;
+
+    if (x == 5) then
+        while x > 2;
+            x = x - 1;
+	    z = x + z + convert_s(y);
+        endwhile;
+    else
+        z = convert_s(y);
+    endif;
+}
+
+string proc convert_s(bool y) {
+    string result;
+    if (y == true) then
+        result = "true";
+    else
+        result = "fals";
+    endif;
+    return result;
+}
